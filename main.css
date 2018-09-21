@@ -68,6 +68,7 @@ body{
     height: 50px;
     line-height: 50px;
     color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .main div{
     display: flex;
@@ -213,15 +214,16 @@ margin-left: 2vw;
     margin-bottom: 10vw;
 }
 .questions{
-background-color: #131e29;
+    height: 13vw;
+    background: #d8d8d8;
     border-radius: 10px 10px 0 0;
     height: 13vw;
 }
 .questions span{
-    margin-left: 5vw;
-    color: white;
-        font-size: 5vw;
-    line-height:8vw;
+       margin-left: 5vw;
+    color: #131e29;
+    font-size: 5vw;
+    line-height: 8vw;
 }
 summary::-webkit-details-marker {
   display: none;
@@ -249,4 +251,14 @@ details{
 .frequently{
     margin-top: 15vw;
    
+}
+summary:hover{
+    background-color: #131e29;
+    color:white;
+}
+.questions span:hover{
+    color: white;
+}
+summary:active{
+    background: white;
 }
