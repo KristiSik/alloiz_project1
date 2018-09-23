@@ -1052,6 +1052,7 @@
     }
     
     .slider-button {
+        cursor: pointer;
         background-size: contain;
         background-repeat: no-repeat;
         width: 25px;
