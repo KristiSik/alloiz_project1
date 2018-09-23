@@ -28,4 +28,25 @@ $(document).ready(function(){
             }
         });
     });
+    const mySiema = new Siema({
+        selector: '.slides',
+        duration: 1000,
+        easing: 'ease-out',
+        perPage: 1,
+        startIndex: 0,
+        draggable: false,
+        multipleDrag: true,
+        threshold: 20,
+        loop: true,
+        rtl: false,
+        onInit: () => {},
+        onChange: () => {},
+      });
+
+    $('.slider-left-button').click(function() {
+        mySiema.prev();
+    });
+    $('.slider-right-button').click(function() {
+        mySiema.next();
+    });
 });

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 768px) {
     a {
         text-decoration: none;
         color: #ffffff;
@@ -45,7 +45,7 @@
         padding-left: 3%;
         padding-right: 3%;
     }
-    .header{
+    .header {
         padding-top: 47px;
         text-align: center;
     }
@@ -347,9 +347,10 @@
     .faq-item-expanded .faq-answer {
         display: inherit;
     }
+
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 769px) {
     .desktop {
         display: block;
     }
@@ -388,14 +389,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin: 30px 11%;
     }
     
     .logo {
         background-image: url("../img/logo.png");
         background-size: contain;
         background-repeat: no-repeat;
-        width: 20%;
         height: 68px;
     }
     
@@ -410,7 +409,7 @@
         align-items: center;
     }
     
-    .navigation li, .user-panel li {
+    .navigation li {
         display: inline;
     }
     
@@ -430,8 +429,131 @@
         margin-right: 14px;
     }
     
+    @media screen and (min-width: 769px) and (max-width: 960px) {
+        .quote {
+            width: 550px;
+            height: 430px;
+            font-size: 15px;
+        }
+
+        .quote-text {
+            height: 130px;
+            margin: 0px 50px 60px 50px;
+            padding-top: 60px;
+        }
+    }
+    @media screen and (min-width: 961px) and (max-width: 1279px) {
+        .quote {
+            width: 770px;
+            height: 430px;
+            font-size: 22px;
+        }
+
+        .quote-text {
+            height: 130px;
+            margin: 0px 50px 60px 50px;
+            padding-top: 100px;
+        }
+    }
+
+
+    @media screen and (min-width: 769px) and (max-width: 1279px) {
+        .user-panel li {
+            display: block;
+            margin-top: 40px;
+        }
+
+        .user-panel li:nth-of-type(-n + 2) a {
+            padding: 14px 10px;
+        }
+
+        .about-item {
+            width: 200px;
+            margin: 40px 15px;
+        }
+
+        .faq-item {
+            width: 700px;
+        }
+    
+        .privacy-section-item {
+            width: 300px;
+        }
+
+        footer .footer-item:first-of-type {
+            margin-left: 40px;
+        }
+
+        footer .footer-item:last-of-type {
+            margin-right: 40px;
+        }
+
+        .header {
+            margin: 30px 2%;
+        }
+
+        .logo {
+            width: 25%;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        
+        .quote-text {
+            height: 130px;
+            margin: 0px 50px 60px 50px;
+            padding-top: 140px;        }
+
+        .quote {
+            width: 944px;
+            height: 430px;
+            line-height: 1.9;
+            font-size: 20px;
+        }
+
+        .user-panel li {
+            display: inline;
+        }
+
+        .about-item {
+            width: 340px;
+            margin: 40px 15px;
+        }
+
+        .user-panel li:nth-of-type(-n + 2) a {
+            padding: 14px 35px;
+        }
+
+        .faq-item {
+            width: 945px;
+        }
+    
+        .privacy-section-item {
+            width: 555px;
+        }
+
+        footer .footer-item:first-of-type {
+            margin-right: 100px;
+        }
+        
+        .logo {
+            width: 20%;
+        }
+    }
+
+    @media screen and (min-width: 1280px) and (max-width: 1600px) {
+        .header {
+            margin: 30px 5%;
+        }
+    }
+
+    @media screen and (min-width: 1601px) {
+        .header {
+            margin: 30px 11%;
+        }
+    }
+    
     .user-panel li:nth-of-type(-n + 2) a {
-        padding: 14px 35px;
         margin-right: 10px;
         background: #ffffff;
         border-radius: 30px;
@@ -818,11 +940,9 @@
     
     .about-item {
         display: flex;
-        margin: 40px 15px;
         flex-direction: column;
         align-items: center;
         font-family: 'Roboto Light';
-        width: 340px;
         font-size: 18px;
         text-align: center;
     }
@@ -906,7 +1026,11 @@
         justify-content: center;
         align-items: center;
     }
-    
+
+    .slides {
+        width: 944px;
+    }
+
     .what-they-say-about-comroads-section h1 {
         text-align: center;
         margin: 0 auto 90px auto;
@@ -915,20 +1039,11 @@
     }
     
     .quote {
-        width: 944px;
-        height: 361px;
         font-family: 'Roboto';
         font-style: italic;
-        line-height: 1.9;
-        font-size: 20px;
         background-image: url("../img/quote-bg.png");
         background-size: contain;
         background-repeat: no-repeat;
-    }
-    
-    .quote-text {
-        height: 130px;
-        margin: 140px 50px 60px 50px;
     }
     
     .quote-author {
@@ -967,7 +1082,6 @@
     }
     
     .faq-item {
-        width: 945px;
         margin-top: 10px;
     }
     
@@ -976,6 +1090,8 @@
     }
     
     .faq-question {
+        display: flex;
+        justify-content: space-between;
         cursor: pointer;
         font-weight: bold;
         background-color: #ffffff;
@@ -1034,11 +1150,6 @@
         justify-content: center;
         background-color: #e8e8f2;
     }
-    
-    .privacy-section-item {
-        width: 555px;
-    }
-    
     .privacy-section-item-title {
         font-size: 30px;
         font-weight: bold;
@@ -1087,10 +1198,6 @@
         background-color: #131e29;
     }
     
-    footer .footer-item:first-of-type {
-        margin-right: 100px;
-    }
-    
     .logo-footer {
         background-image: url("../img/logo-footer.png");
         width: 294px;
@@ -1123,6 +1230,7 @@
     }
     
     .copyright {
+        margin-top: 10px; 
         font-size: 18px;
         color: #ffffff;
         font-family: 'Roboto Regular';
@@ -1160,13 +1268,8 @@
         flex-direction: column;
         align-items: flex-end;
     }
-    
+
     @media screen and (max-width: 1600px) {
-        .header {
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-    
         .active {
             padding: 14px 26px;
         }
