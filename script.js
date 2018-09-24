@@ -18,7 +18,6 @@ $(document).ready(function(){
     $(".faq-answer").each(function() {$(this).hide();});
     questions.each(function(index) {
         $(this).click(function() {
-            console.log('asd');
             if ($("#answer" + (index + 1)).is(":hidden")) {
                 $("#answer" + (index + 1)).slideDown();
                 $(this).parent().addClass("faq-item-expanded")

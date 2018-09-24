@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     a {
         text-decoration: none;
         color: #ffffff;
@@ -424,10 +424,6 @@
         box-shadow: 0 0 20px -7px;
     }
     
-    .navigation li a {
-        padding: 14px 26px;
-        margin-right: 14px;
-    }
     
     @media screen and (min-width: 769px) and (max-width: 960px) {
         .quote {
@@ -493,7 +489,7 @@
         }
 
         .logo {
-            width: 25%;
+            width: 23%;
         }
     }
 
