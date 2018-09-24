@@ -419,7 +419,7 @@
         margin-right: 14px;
     }
     
-    .active {
+    .navigation li a:hover {
         background: linear-gradient(to bottom, #ffffff, #f1f1f9);
         border-radius: 30px;
         box-shadow: 0 0 20px -7px;
@@ -460,8 +460,12 @@
             margin-top: 40px;
         }
 
-        .user-panel li:nth-of-type(-n + 2) a {
-            padding: 14px 10px;
+        .user-panel li:nth-of-type(1) a {
+            padding: 14px 11px;
+        }
+
+        .user-panel li:nth-of-type(2) a {
+            padding: 14px 18px;
         }
 
         .about-item {
@@ -1268,7 +1272,7 @@
     }
 
     @media screen and (max-width: 1600px) {
-        .active {
+        .navigation li a {
             padding: 14px 26px;
         }
         
