@@ -11,8 +11,8 @@ var nodeArray = [
     document.querySelector('.about-items-row:nth-child(1)'),
     document.querySelector('.about-items-row:nth-child(2)')
 ];
-ScrollReveal().reveal(nodeArray, { reset: true, interval: 400 });
-ScrollReveal().reveal(nodeArray, { delay: 200 });
+ScrollReveal().reveal(nodeArray, { reset: true, interval: 500 });
+ScrollReveal().reveal(nodeArray, { delay: 400 });
 $(document).ready(function(){
     var questions = $(".faq-question");
     $(".faq-answer").each(function() {$(this).hide();});
