@@ -130,8 +130,8 @@
     .user{
         background: url("../img/Layer7.png");
         background-repeat: no-repeat;
-        width: 45vh;
-        height: 72vh;
+        width: 73vw;
+        height: 117vw;
         background-size: cover;
         z-index: 2;
         position: relative;
@@ -154,6 +154,7 @@
     .whatThey h4{
             color: white;
         margin-top: 20vw;
+            font-size: 5.5vw;
         margin-bottom: 27vw;
         text-align: center;
     }
