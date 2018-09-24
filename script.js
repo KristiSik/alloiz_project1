@@ -13,6 +13,7 @@ var nodeArray = [
 ];
 ScrollReveal().reveal(nodeArray, { reset: true, interval: 400 });
 ScrollReveal().reveal(nodeArray, { delay: 200 });
+ScrollReveal().reveal(nodeArray,{ duration: 2000 });
 $(document).ready(function(){
     var questions = $(".faq-question");
     $(".faq-answer").each(function() {$(this).hide();});
