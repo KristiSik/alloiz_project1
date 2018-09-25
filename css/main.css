@@ -387,9 +387,6 @@
     
     .header {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
     }
     
     .logo {
@@ -414,8 +411,7 @@
         display: inline;
     }
     
-    .navigation li a {
-        padding: 14px 26px;
+    .navigation li:last-of-type a {
         margin-right: 14px;
     }
     
@@ -427,6 +423,7 @@
     
     
     @media screen and (min-width: 769px) and (max-width: 960px) {
+        
         .quote {
             width: 550px;
             height: 430px;
@@ -455,17 +452,90 @@
 
 
     @media screen and (min-width: 769px) and (max-width: 1279px) {
-        .user-panel li {
-            display: block;
-            margin-top: 40px;
+        @media screen and (min-width: 769px) and (max-width: 900px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+
+            .logo {
+                margin-top: 20px;
+                margin-left: 20px;
+                width: 25%;
+            }
+
+            .menu {
+                align-self: flex-end;
+                margin-top: -50px;
+            }
+        
+            .navigation li a {
+                padding: 14px 15px;
+            }
+            
+            .user-panel li:nth-of-type(1) a {
+                padding: 14px 10px;
+            }
+
+            .user-panel li:nth-of-type(2) a {
+                padding: 14px 18px;
+            }
+
+            .user-panel li:nth-of-type(2), .user-panel li:nth-of-type(3) {
+                display: block;
+                margin-top: 40px;
+            }
+            .user-panel li:nth-of-type(1) {
+                display: block;
+                margin-top: 0px;
+            }
         }
 
-        .user-panel li:nth-of-type(1) a {
-            padding: 14px 11px;
+        @media screen and (min-width: 901px) and (max-width: 1279px) {
+
+            .logo {
+                width: 23%;
+            }
+
+            .header {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .navigation li a {
+                padding: 14px 10px;
+            }
+            
+            .user-panel li:nth-of-type(1) a {
+                padding: 14px 8px;
+            }
+
+            .user-panel li:nth-of-type(2) a {
+                padding: 14px 16px;
+            }
+
+            .user-panel li {
+                display: block;
+                margin-top: 40px;
+            }
+            
+            .user-panel li:nth-of-type(2), .user-panel li:nth-of-type(3) {
+                display: block;
+                margin-top: 40px;
+            }
+            
+            .user-panel li:nth-of-type(1) {
+                display: block;
+                margin-top: 0px;
+            }
         }
 
-        .user-panel li:nth-of-type(2) a {
-            padding: 14px 18px;
+        @media screen and (min-width: 1000px) and (max-width: 1280px) {
+            .logo {
+                margin-left: 40px;
+            }
         }
 
         .about-item {
@@ -492,14 +562,18 @@
         .header {
             margin: 30px 2%;
         }
-
-        .logo {
-            width: 23%;
-        }
     }
 
     @media screen and (min-width: 1280px) {
         
+        
+        .header {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+
         .quote-text {
             height: 130px;
             margin: 0px 50px 60px 50px;
@@ -1271,16 +1345,25 @@
         align-items: flex-end;
     }
 
-    @media screen and (max-width: 1600px) {
+    @media screen and (min-width:1280px) and (max-width:1360px) {
         .navigation li a {
-            padding: 14px 26px;
+            padding: 14px 6px;
         }
-        
+    }
+
+    @media screen and (min-width:1360px) and (max-width: 1410px) {
         .navigation li a {
-            padding: 14px 10px;
-            margin-right: 0px;
+            padding: 14px 8px;
         }
+    }
     
+    @media screen and (min-width:1411px) {
+        .navigation li a {
+            padding: 14px 14px;
+        }
+    }
+
+    @media screen and (max-width: 1600px) {
         .user-panel {
             padding-left: 0px;
         }
