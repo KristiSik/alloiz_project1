@@ -13,7 +13,7 @@ var nodeArray = [
 ];
 ScrollReveal().reveal(nodeArray, { reset: true, interval: 400 });
 ScrollReveal().reveal(nodeArray, { delay: 200 });
-ScrollReveal().reveal(nodeArray,{ duration: 2000 });
+ScrollReveal().reveal(nodeArray, { duration: 2000 });
 $(document).ready(function(){
     var questions = $(".faq-question");
     $(".faq-answer").each(function() {$(this).hide();});
@@ -41,23 +41,20 @@ $(document).ready(function(){
         rtl: false,
         onInit: () => {},
         onChange: () => {},
-      });
-
+    });
     $('.slider-left-button').click(function() {
         mySiema.prev();
     });
     $('.slider-right-button').click(function() {
         mySiema.next();
     });
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                window.location.hash = hash;
-            });
+    var n = 0;
+    $('.menu').click(function(){
+        n++;
+        if (n % 2 == 0) {
+            $(".submenu").hide();
+        } else {
+            $(".submenu").show();
         }
     });
 });

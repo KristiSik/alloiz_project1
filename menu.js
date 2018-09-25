@@ -1,4 +1,3 @@
-// ScrollReveal().reveal('.navigation', { delay: 500 });
 ScrollReveal().reveal('.navigation', { easing: 'ease-in' });
 ScrollReveal().reveal('.header', { easing: 'ease-in' });
 ScrollReveal().reveal('.main', { easing: 'ease-in' });
